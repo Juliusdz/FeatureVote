@@ -9,7 +9,6 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { StoreModule } from '@ngrx/store';
 import { reducers, metaReducers } from './reducers';
 import { EffectsModule } from '@ngrx/effects';
-// import { AppEffects } from './app.effects';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -44,7 +43,6 @@ const routes: Routes = [
     AuthModule.forRoot(),
     RouterModule.forRoot(routes),
     StoreModule.forRoot(reducers, { metaReducers }),
-    // EffectsModule.forRoot([AppEffects]),    
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production }),
     AngularFireModule.initializeApp(environment.firebase),
     EffectsModule.forRoot([]),

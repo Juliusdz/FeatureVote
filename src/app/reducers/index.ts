@@ -1,13 +1,8 @@
 import {
-    ActionReducer,
     ActionReducerMap,
-    createFeatureSelector,
-    createSelector,
     MetaReducer
   } from '@ngrx/store';
   import { environment } from '../../environments/environment';
-//   import { User } from '../interfaces/user';
-//   import { AuthActionTypes } from '../auth/auth.actions';
   import { storeFreeze } from 'ngrx-store-freeze';
   
   export interface AppState {

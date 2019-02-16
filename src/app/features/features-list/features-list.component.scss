@@ -1,0 +1,78 @@
+.tableContainer {
+    width: 445px;
+    margin-bottom: 20px;
+    .cell {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .cellIcon {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .tableHeader {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 3px;
+        div + div {
+            margin-left: 3px;
+        }
+        .headerLeft, .headerRight {
+            background: #6F7084;
+            color: white;
+        }        
+    }
+
+    .tableData {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 3px;
+        div + div {
+            margin-left: 3px;
+        }     
+        .rowRight {
+            cursor: pointer;
+
+            .likesCount {
+                float: left;
+                width: 40px;
+            }
+
+            .likeIcon {
+                height: 15px;
+                background-size: 15px;
+                background-repeat: no-repeat;
+                float: right;
+                padding-right: 15px;
+            }
+
+            -webkit-transition: background-color 100ms linear;
+            -ms-transition: background-color 100ms linear;
+            transition: background-color 100ms linear;
+
+            &:hover {
+                background-color: #CBD9F3 !important;
+            }
+
+            &:active {
+                background-color: #A8B7D6 !important; 
+            }
+        }
+    }
+}
+
+.-pl-15 {
+    padding-left: 15px;    
+}
+
+.headerLeft, .rowLeft {
+    width: 250px;
+}
+.headerRight, .rowRight {
+    width: 95px;
+}

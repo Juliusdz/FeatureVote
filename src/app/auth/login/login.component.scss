@@ -1,0 +1,68 @@
+.loginForm {
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+
+    .field {
+        width: 100%;
+        height: 30px;
+        text-align: center;
+        outline: none;
+    }
+
+    .field + .field {
+        margin-top: 10px;
+    }
+}
+
+
+.formContainer {
+    display: flex;
+    flex-direction: row;
+    .inputContainer {
+        width: 250px;
+        height: 40px;
+        .suggestionInput {
+            font-size: 1em;
+            width: 100%;
+            height: 100%;
+            padding-left: 15px;
+            border: 1px solid #E7E7E7;
+            box-sizing: border-box;
+            outline: none;    
+        }   
+    }
+
+    .buttonContainer {
+        width: 95px;
+        height: 40px;
+        margin-left: 3px;
+        .suggestionSubmit {
+            font-size: 1em;
+            width: 100%;
+            height: 100%;
+            box-sizing:border-box;
+            background-color: #5C7EBD;
+            color: white;
+            border: none;
+
+            -webkit-transition: background-color 100ms linear;
+            -ms-transition: background-color 100ms linear;
+            transition: background-color 100ms linear;
+
+            &:hover {
+                background-color: #7796CE !important;
+            }
+
+            &:active {
+                background-color: #5974A9 !important; 
+            }            
+        }
+    }
+
+
+}

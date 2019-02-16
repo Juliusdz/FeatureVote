@@ -1,0 +1,11 @@
+<div class="formContainer">
+  <div class="inputContainer">
+      <input [(ngModel)]="title" class="suggestionInput" placeholder="Add new suggestion">
+  </div>
+    
+    <div class="buttonContainer">
+        <button (click)="save()" class="suggestionSubmit" [disabled]="!title">Add</button>
+    </div>
+</div>
+
+

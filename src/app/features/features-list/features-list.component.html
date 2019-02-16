@@ -1,0 +1,26 @@
+<div class="tableContainer">
+  <div class="tableHeader">
+    <div class="headerLeft cell"> 
+      <span class="-pl-15"> Suggestion</span> 
+    </div>
+    <div class="headerRight cell"> 
+      <span class="-pl-15"> Likes </span> 
+    </div>
+  </div>
+  <div *ngFor="let feature of features$ | async; even as isEven" class="tableData">
+    <div class="rowLeft cell" [ngStyle]="{'background-color': isEven ? '#F0F0F0' : '#E7E7E7'}">
+        <span class="-pl-15">{{feature.title}}</span>
+    </div>
+    <div class="rowRight cellIcon" (click)="voteFeature(feature)" [ngStyle]="{'background-color': isEven ? '#F0F0F0' : '#E7E7E7'}">
+      <div class="likesCount">
+          <span class="-pl-15">{{feature.likesCount}}</span>
+      </div>
+      <div>
+        <img src="assets/like.svg" class="likeIcon"/>
+      </div>
+ 
+    </div>
+  </div>  
+</div>
+          
+<app-feature-form></app-feature-form>
